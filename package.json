@@ -1,0 +1,34 @@
+{
+  "name": "envcheck",
+  "version": "0.1.0",
+  "description": "Fast, modern Rust CLI for linting .env files and DevSecOps integrations",
+  "keywords": [
+    "env",
+    "dotenv",
+    "lint",
+    "kubernetes",
+    "devops",
+    "terraform",
+    "ansible"
+  ],
+  "author": "envcheck",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envcheck/envcheck"
+  },
+  "homepage": "https://envcheck.github.io",
+  "bin": {
+    "envcheck": "bin/envcheck"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js"
+  },
+  "files": [
+    "bin",
+    "scripts"
+  ],
+  "engines": {
+    "node": ">=16"
+  }
+}
