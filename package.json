@@ -1,7 +1,7 @@
 {
-  "name": "envcheck",
-  "version": "0.1.0",
-  "description": "Fast, modern Rust CLI for linting .env files and DevSecOps integrations",
+  "name": "@envcheck/cli",
+  "version": "1.2.0",
+  "description": "Fast, modern Rust CLI (wrapper) for linting .env files",
   "keywords": [
     "env",
     "dotenv",

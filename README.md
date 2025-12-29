@@ -5,16 +5,16 @@ Fast, modern Rust CLI for linting `.env` files and DevSecOps integrations.
 ## Installation
 
 ```bash
-npm install -g envcheck
+npm install -g @envcheck/cli
 # or
-npx envcheck lint .env
+npx @envcheck/cli lint .env
 ```
 
 ## Usage
 
 ```bash
 # Lint .env files
-envcheck lint .env .env.local
+npx @envcheck/cli lint .env .env.local
 
 # Compare .env files
 envcheck compare .env.example .env
