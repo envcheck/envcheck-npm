@@ -5,11 +5,6 @@ on:
     tags:
       - "v*"
 
-# Required for npm Trusted Publishing (OIDC)
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
   publish:
     name: Publish to npm
@@ -21,10 +16,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "24" # Trusted Publishing requires Node.js 24+
+          node-version: "lts/*"
           registry-url: "https://registry.npmjs.org"
 
-      - name: Publish to npm with provenance
-        run: npm publish --access public --provenance
+      - name: Publish to npm
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
